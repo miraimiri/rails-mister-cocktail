@@ -1,0 +1,13 @@
+<div class="clippy">
+  <div class="container">
+    <h1>All cocktails</h1>
+    <%= link_to "Add", new_cocktail_path %>
+    <div class="content">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card">
+            <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

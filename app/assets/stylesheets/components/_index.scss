@@ -2,3 +2,60 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+
+// body
+.clippy {
+  height: 100%;
+  width: 100%;
+  // background: linear-gradient(to right bottom, #B1F2FC, #5B8AD7);
+  background-image: url(cocktails.jpg);
+  background-size: cover;
+  clip-path: polygon(25% 0, 100% 0, 100% 70%, 75% 100%, 0 100%, 0 30%);
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: linear-gradient(to right top, rgba(255,255,255,1), rgba(255,255,255,0.4));
+  min-height: 80vh;
+  width: 60%;
+  align-items: center;
+}
+
+.content {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+// h1 headers
+h1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 30px;
+}
+
+h1::before, h1::after {
+  content: "";
+  background: gray;
+  height: .1em;
+  margin: .3em;
+  flex: 1;
+}
+
+// cards
+.card {
+  background-size: cover;
+  background-position: center;
+  background-image: url(mojito.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px auto;
+  width: 240px;
+  height: 160px;
+}
