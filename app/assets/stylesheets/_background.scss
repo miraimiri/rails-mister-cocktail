@@ -6,7 +6,7 @@ body {
 .clippy {
   height: 100%;
   width: 100%;
-  background-image: url(cocktails.jpg);
+  // background-image: url(image_path(cocktails.jpg));
   background-size: cover;
   clip-path: polygon(20% 0, 100% 0, 100% 70%, 80% 100%, 0 100%, 0 30%);
   position: absolute;
