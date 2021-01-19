@@ -1,9 +1,13 @@
-<div class="container">
-  <h1>Add a new cocktail!</h1>
-  <%= simple_form_for(@cocktail) do |f| %>
-    <%= f.input :name %>
-    <%= f.submit class: 'btn btn-info' %>
-    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <% end %>
-  <li><%= link_to "Back", cocktails_path %></li>
+<div class="clippy">
+  <div class="container">
+    <h1>Add a new cocktail!</h1>
+    <%= simple_form_for(@cocktail) do |f| %>
+      <%= f.input :name %>
+      <%= f.submit class: 'btn btn-info' %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <% end %>
+    <div class="nav-list">
+      <li><%= link_to "Back", cocktails_path %></li>
+    </div>
+  </div>
 </div>

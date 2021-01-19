@@ -1,0 +1,35 @@
+// body
+body {
+  background-color: #E0DED3;
+}
+
+.clippy {
+  height: 100%;
+  width: 100%;
+  background-image: url(cocktails.jpg);
+  background-size: cover;
+  clip-path: polygon(20% 0, 100% 0, 100% 70%, 80% 100%, 0 100%, 0 30%);
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  // justify-content: flex-start;
+}
+
+.container {
+  background: linear-gradient(to right top, rgba(255,255,255,1), rgba(255,255,255,0.4));
+  min-height: 90vh;
+  width: 60%;
+  // align-items: center;
+  * {
+    margin: 4px;
+  }
+}
+
+.content {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: row;
+}

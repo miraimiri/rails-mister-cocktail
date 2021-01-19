@@ -1,10 +1,14 @@
-<div class="container">
-  <h1>Add a new dose to <%= @cocktail.name %>!</h1>
-  <%= simple_form_for([@cocktail, @dose]) do |f| %>
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-    <%= f.submit class: 'btn btn-info' %>
-    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <% end %>
-  <li><%= link_to "Back", cocktail_path(@cocktail) %></li>
+<div class="clippy">
+  <div class="container">
+    <h1>Add a new dose to <%= @cocktail.name %>!</h1>
+    <%= simple_form_for([@cocktail, @dose]) do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient, input_html: { class: 'select2' } %>
+      <%= f.submit class: 'btn btn-info' %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <% end %>
+    <div class="nav-list">
+      <li><%= link_to "Back", cocktail_path(@cocktail) %></li>
+    </div>
+  </div>
 </div>

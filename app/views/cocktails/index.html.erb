@@ -1,7 +1,9 @@
 <div class="clippy">
   <div class="container">
     <h1>All cocktails</h1>
-    <%= link_to "Add", new_cocktail_path %>
+    <div class="nav-list">
+      <%= link_to "Add", new_cocktail_path %>
+    </div>
     <div class="content">
       <% @cocktails.each do |cocktail| %>
         <div class="card">
