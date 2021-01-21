@@ -2,6 +2,7 @@
   <%= f.input :name %>
   <%= f.association :ingredients %>
   <%= f.input :doses %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit class: 'btn btn-info' %>
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 <% end %>
