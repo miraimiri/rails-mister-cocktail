@@ -1,6 +1,9 @@
-<div class="clippy" style="background-image: url(<%= asset_url('cocktails.jpg')%>);">
+<div class="clippy" style="background-image: url(<%= asset_url('cocktails.jpg') %>);">
   <div class="container">
     <h1><%= @cocktail.name %></h1>
+    <div class="cocktail-image">
+      <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+    </div>
     <div class="content">
       <ul>
         <% @cocktail.doses.each do |dose| %>
