@@ -1,4 +1,4 @@
-<div class="clippy" style="background-image: url(<%= asset_url('cocktails.jpg') %>);">
+<div class="wrap">
   <div class="container">
     <h1><%= @cocktail.name %></h1>
     <div class="cocktail-image">
@@ -11,13 +11,13 @@
             <%= link_to "delete this dose", dose_path(dose), method: :delete, data: { confirm: "Are you sure you want to delete this dose?" } %></li>
         <% end %>
       </ul>
-      </div>
-      <div class="nav-list">
-        <ul>
-          <li><%= link_to "Back", cocktails_path %></li>
-          <li><%= link_to "Add Dose", new_cocktail_dose_path(@cocktail) %></li>
-          <li><%= link_to "Delete", cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" } %></li>
-        </ul>
-      </div>
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li><%= link_to "Back", cocktails_path %></li>
+        <li><%= link_to "Add Dose", new_cocktail_dose_path(@cocktail) %></li>
+        <li><%= link_to "Delete", cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?" } %></li>
+      </ul>
+    </div>
   </div>
 </div>
